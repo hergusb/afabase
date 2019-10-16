@@ -6,206 +6,185 @@ import javax.persistence.Id;
 @Entity
 public class Jugadores {
 
-  @Id
-  private long nJugador;
-  private String dApellido;
-  private String dNombre;
-  private String dApellidoComp;
-  private String dNombreComp;
-  private String dSobrenombre;
-  private String dApodo;
-  private String cPuesto;
-  private java.sql.Timestamp fNacimiento;
-  private String dLocalidadNac;
-  private long nProvinciaNac;
-  private long nPaisNac;
-  private java.sql.Timestamp fFallecimiento;
-  private String dDudas;
-  private String dConfirmaciones;
-  private String dObservaciones;
-  private String dDiccionarioA;
-  private String dDiccionarioB;
-  private String cTipoDoc;
-  private long nDocumento;
+    @Id
+    private long id_jugador;
+    private String apellido;
+    private String nombre;
+    private String apellido_completo;
+    private String nombre_completo;
+    private String tipo_documento;
+    private long nro_documento;
+    private String sobrenombre;
+    private String apodo;
+    private String cod_puesto;
+    private java.sql.Timestamp fecha_nacimiento;
+    private String localidad_nacimiento;
+    private long provincia_nacimiento;
+    private long pais_nacimiento;
+    private java.sql.Timestamp fecha_fallecimiento;
+    private String dudas;
+    private String confirmaciones;
+    private String observaciones;
+    private String diccionario_a;
+    private String diccionario_b;
 
+    public long getId_jugador() {
+        return id_jugador;
+    }
 
-  public long getNJugador() {
-    return nJugador;
-  }
+    public void setId_jugador(long id_jugador) {
+        this.id_jugador = id_jugador;
+    }
 
-  public void setNJugador(long nJugador) {
-    this.nJugador = nJugador;
-  }
+    public String getApellido() {
+        return apellido;
+    }
 
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
 
-  public String getDApellido() {
-    return dApellido;
-  }
+    public String getNombre() {
+        return nombre;
+    }
 
-  public void setDApellido(String dApellido) {
-    this.dApellido = dApellido;
-  }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
+    public String getApellido_completo() {
+        return apellido_completo;
+    }
 
-  public String getDNombre() {
-    return dNombre;
-  }
+    public void setApellido_completo(String apellido_completo) {
+        this.apellido_completo = apellido_completo;
+    }
 
-  public void setDNombre(String dNombre) {
-    this.dNombre = dNombre;
-  }
+    public String getNombre_completo() {
+        return nombre_completo;
+    }
 
+    public void setNombre_completo(String nombre_completo) {
+        this.nombre_completo = nombre_completo;
+    }
 
-  public String getDApellidoComp() {
-    return dApellidoComp;
-  }
+    public String getTipo_documento() {
+        return tipo_documento;
+    }
 
-  public void setDApellidoComp(String dApellidoComp) {
-    this.dApellidoComp = dApellidoComp;
-  }
+    public void setTipo_documento(String tipo_documento) {
+        this.tipo_documento = tipo_documento;
+    }
 
+    public long getNro_documento() {
+        return nro_documento;
+    }
 
-  public String getDNombreComp() {
-    return dNombreComp;
-  }
+    public void setNro_documento(long nro_documento) {
+        this.nro_documento = nro_documento;
+    }
 
-  public void setDNombreComp(String dNombreComp) {
-    this.dNombreComp = dNombreComp;
-  }
+    public String getSobrenombre() {
+        return sobrenombre;
+    }
 
+    public void setSobrenombre(String sobrenombre) {
+        this.sobrenombre = sobrenombre;
+    }
 
-  public String getDSobrenombre() {
-    return dSobrenombre;
-  }
+    public String getApodo() {
+        return apodo;
+    }
 
-  public void setDSobrenombre(String dSobrenombre) {
-    this.dSobrenombre = dSobrenombre;
-  }
+    public void setApodo(String apodo) {
+        this.apodo = apodo;
+    }
 
+    public String getCod_puesto() {
+        return cod_puesto;
+    }
 
-  public String getDApodo() {
-    return dApodo;
-  }
+    public void setCod_puesto(String cod_puesto) {
+        this.cod_puesto = cod_puesto;
+    }
 
-  public void setDApodo(String dApodo) {
-    this.dApodo = dApodo;
-  }
+    public java.sql.Timestamp getFecha_nacimiento() {
+        return fecha_nacimiento;
+    }
 
+    public void setFecha_nacimiento(java.sql.Timestamp fecha_nacimiento) {
+        this.fecha_nacimiento = fecha_nacimiento;
+    }
 
-  public String getCPuesto() {
-    return cPuesto;
-  }
+    public String getLocalidad_nacimiento() {
+        return localidad_nacimiento;
+    }
 
-  public void setCPuesto(String cPuesto) {
-    this.cPuesto = cPuesto;
-  }
+    public void setLocalidad_nacimiento(String localidad_nacimiento) {
+        this.localidad_nacimiento = localidad_nacimiento;
+    }
 
+    public long getProvincia_nacimiento() {
+        return provincia_nacimiento;
+    }
 
-  public java.sql.Timestamp getFNacimiento() {
-    return fNacimiento;
-  }
+    public void setProvincia_nacimiento(long provincia_nacimiento) {
+        this.provincia_nacimiento = provincia_nacimiento;
+    }
 
-  public void setFNacimiento(java.sql.Timestamp fNacimiento) {
-    this.fNacimiento = fNacimiento;
-  }
+    public long getPais_nacimiento() {
+        return pais_nacimiento;
+    }
 
+    public void setPais_nacimiento(long pais_nacimiento) {
+        this.pais_nacimiento = pais_nacimiento;
+    }
 
-  public String getDLocalidadNac() {
-    return dLocalidadNac;
-  }
+    public java.sql.Timestamp getFecha_fallecimiento() {
+        return fecha_fallecimiento;
+    }
 
-  public void setDLocalidadNac(String dLocalidadNac) {
-    this.dLocalidadNac = dLocalidadNac;
-  }
+    public void setFecha_fallecimiento(java.sql.Timestamp fecha_fallecimiento) {
+        this.fecha_fallecimiento = fecha_fallecimiento;
+    }
 
+    public String getDudas() {
+        return dudas;
+    }
 
-  public long getNProvinciaNac() {
-    return nProvinciaNac;
-  }
+    public void setDudas(String dudas) {
+        this.dudas = dudas;
+    }
 
-  public void setNProvinciaNac(long nProvinciaNac) {
-    this.nProvinciaNac = nProvinciaNac;
-  }
+    public String getConfirmaciones() {
+        return confirmaciones;
+    }
 
+    public void setConfirmaciones(String confirmaciones) {
+        this.confirmaciones = confirmaciones;
+    }
 
-  public long getNPaisNac() {
-    return nPaisNac;
-  }
+    public String getObservaciones() {
+        return observaciones;
+    }
 
-  public void setNPaisNac(long nPaisNac) {
-    this.nPaisNac = nPaisNac;
-  }
+    public void setObservaciones(String observaciones) {
+        this.observaciones = observaciones;
+    }
 
+    public String getDiccionario_a() {
+        return diccionario_a;
+    }
 
-  public java.sql.Timestamp getFFallecimiento() {
-    return fFallecimiento;
-  }
+    public void setDiccionario_a(String diccionario_a) {
+        this.diccionario_a = diccionario_a;
+    }
 
-  public void setFFallecimiento(java.sql.Timestamp fFallecimiento) {
-    this.fFallecimiento = fFallecimiento;
-  }
+    public String getDiccionario_b() {
+        return diccionario_b;
+    }
 
-
-  public String getDDudas() {
-    return dDudas;
-  }
-
-  public void setDDudas(String dDudas) {
-    this.dDudas = dDudas;
-  }
-
-
-  public String getDConfirmaciones() {
-    return dConfirmaciones;
-  }
-
-  public void setDConfirmaciones(String dConfirmaciones) {
-    this.dConfirmaciones = dConfirmaciones;
-  }
-
-
-  public String getDObservaciones() {
-    return dObservaciones;
-  }
-
-  public void setDObservaciones(String dObservaciones) {
-    this.dObservaciones = dObservaciones;
-  }
-
-
-  public String getDDiccionarioA() {
-    return dDiccionarioA;
-  }
-
-  public void setDDiccionarioA(String dDiccionarioA) {
-    this.dDiccionarioA = dDiccionarioA;
-  }
-
-
-  public String getDDiccionarioB() {
-    return dDiccionarioB;
-  }
-
-  public void setDDiccionarioB(String dDiccionarioB) {
-    this.dDiccionarioB = dDiccionarioB;
-  }
-
-
-  public String getCTipoDoc() {
-    return cTipoDoc;
-  }
-
-  public void setCTipoDoc(String cTipoDoc) {
-    this.cTipoDoc = cTipoDoc;
-  }
-
-
-  public long getNDocumento() {
-    return nDocumento;
-  }
-
-  public void setNDocumento(long nDocumento) {
-    this.nDocumento = nDocumento;
-  }
-
+    public void setDiccionario_b(String diccionario_b) {
+        this.diccionario_b = diccionario_b;
+    }
 }
