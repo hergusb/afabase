@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface JugadoresRepository extends CrudRepository<Jugadores, Long> {
 
-    List<Jugadores> findBydApellidoContains(String apellido);
+    List<Jugadores> findByApellidoContains(String apellido);
 
 }
