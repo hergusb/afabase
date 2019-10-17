@@ -1,12 +1,7 @@
 package ar.hergus.pruebajpa;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-@Entity
 public class Jugadores {
 
-    @Id
     private long id_jugador;
     private String apellido;
     private String nombre;

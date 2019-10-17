@@ -1,19 +1,9 @@
 package ar.hergus.pruebajpa;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
 public class Puestos {
 
-  @Id
-  @Column(name="cod_puesto")
   private String codPuesto;
-  @Column(name="desc_puesto")
   private String descPuesto;
-  @Column(name="nro_orden")
   private long nroOrden;
 
 
