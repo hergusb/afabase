@@ -1,3 +1,4 @@
 FROM java:8
-COPY pruebajpa-0.0.1-SNAPSHOT.jar /pruebajpa.jar
-CMD ["java", "-jar", "/pruebajpa.jar"]
+COPY . .
+RUN mvn install
+CMD ["java", "-jar", "/target/pruebajpa-0.0.1-SNAPSHOT.jar"]
